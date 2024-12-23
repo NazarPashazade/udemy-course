@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Order Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🛍️ Place Your Order</h1>
+    <form id="orderForm" class="form">
+      <div class="form-group">
+        <label for="product" class="label">Choose a Product:</label>
+        <select id="product" name="product" class="input select">
+          <option value="" disabled selected>Select a product</option>
+          <option value="10">Product A ($10)</option>
+          <option value="20">Product B ($20)</option>
+          <option value="30">Product C ($30)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity" class="label">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" class="input" min="1" />
+        <p id="quantityError" class="error"></p>
+      </div>
+      <div class="form-group total-price-group">
+        <p>Total Price: <span id="totalPrice" class="total-price">$0</span></p>
+      </div>
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+
+    <div id="orderSummary" class="order-summary"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

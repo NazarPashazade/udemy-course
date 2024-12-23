@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  /* Form Styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    text-align: left;
+  }
+  
+  /* Labels */
+  .label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Inputs and Selects */
+  .input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+    outline: none;
+  }
+  
+  /* Error Message */
+  .error {
+    color: #ff4d4d;
+    font-size: 0.85em;
+    margin-top: 5px;
+  }
+  
+  /* Total Price Group */
+  .total-price-group {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Total Price */
+  .total-price {
+    color: #6a11cb;
+  }
+  
+  /* Button */
+  .btn {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f7f7f7;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

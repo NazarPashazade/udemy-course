@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Simplified</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Date Practice App</h1>
+
+    <div class="form-group">
+      <label for="date-input">Select a Date:</label>
+      <input type="date" id="date-input">
+    </div>
+
+    <div class="form-group">
+      <label for="add-days">Add Days:</label>
+      <input type="number" id="add-days" placeholder="Enter number of days">
+      <button onclick="addDays()">Add Days</button>
+    </div>
+
+    <div class="form-group">
+      <label for="format-options">Format the Date:</label>
+      <select id="format-options">
+        <option value="toLocaleDateString">Locale Date</option>
+        <option value="toLocaleTimeString">Locale Time</option>
+        <option value="toISOString">ISO String</option>
+      </select>
+      <button onclick="formatDate()">Format</button>
+    </div>
+
+    <div class="form-group">
+      <label for="second-date">Calculate Difference (Select Another Date):</label>
+      <input type="date" id="second-date">
+      <button onclick="calculateDifference()">Calculate</button>
+    </div>
+
+    <div id="output" class="output"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
